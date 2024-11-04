@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trackmania Club Image Processor
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+This React-based image processing tool lets users upload an image, select a crop area, and export it in predefined sizes for Trackmania Club assets. It supports different aspect ratios and resolutions to accommodate various club images like logos, decals, and backgrounds.
+
+## Features
+
+- **Multiple Output Variations**: Export images in predefined sizes, including logo, decals, vertical shots, and screen backgrounds.
+- **Flexible Aspect Ratios**: Each variation has an aspect ratio and resolution suited for specific uses.
+- **Download in Multiple Formats**: Supports download options in PNG and JPEG formats.
+- **Interactive Crop Tool**: Adjust and crop images to fit the required aspect ratio and resolution.
 
 ## Getting Started
 
-First, run the development server:
+The app will be available at `https://trackmania-club.netlify.app`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Upload an Image**: Click the **Upload Your Image** button to select an image from your device.
+2. **Adjust the Crop Area**: Drag over the image to select the desired crop area.
+3. **Generate Image**: Choose a specific image variation (e.g., Logo, Decal) to generate a processed image.
+4. **Download**: After processing, click the **Download** button to save the image in the selected format.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Image Variations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Each variation has predefined dimensions and aspect ratios:
 
-## Learn More
+- **Logo**: 256x256 (1:1 aspect ratio)
+- **Decal**: 1024x1024 (1:1 aspect ratio)
+- **Decal Sponsor**: 1024x256 (4:1 aspect ratio)
+- **Vertical**: 720x928 (45:58 aspect ratio)
+- **Screen 16:9**: 1920x1080 (16:9 aspect ratio)
+- **Screen 8:1**: 2048x256 (8:1 aspect ratio)
+- **Screen 16:1**: 4096x256 (16:1 aspect ratio)
+- **Background**: 1920x1080 (16:9 aspect ratio)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React**: Component-based UI library
+- **React Crop**: Cropper library for selecting and adjusting image crops
+- **FileSaver.js**: For saving processed images
+- **TailwindCSS** (optional): Styling for the UI components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by [MaikeruDev](https://github.com/MaikeruDev). (Ingame: Maikeru_TM - Discord: maikeru.dev) Feel free to reach out for any questions or contributions!
+ 
